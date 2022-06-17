@@ -22,6 +22,11 @@ setup(
     description='Python library for work with ABBYY Lingvo Dictionaries API',
     long_description=long_description,
     long_description_content_type="text/markdown",
+    packages=find_packages(where="src"),
+    package_dir={"lingvo_dictionary": "src/lingvo_dictionary"},
+    package_data={
+        'lingvo_dictionary': ["_client.pyi", 'py.typed']
+    },
     project_urls={
         "Bug Tracker": "https://github.com/Korolev-Oleg/lingvo-dictionary/issues",
         "Documentation": "https://developers.lingvolive.com/en-us/Help",
@@ -35,7 +40,5 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    package_dir={"": "src"},
-    packages=find_packages(where="src"),
     python_requires='>=3.6',
 )
