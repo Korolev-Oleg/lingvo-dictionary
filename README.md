@@ -1,7 +1,7 @@
 ### Installation
-
+Beta version available on test.pypi
 ``` shell
-pip install lingvo-dictionary
+pip install -i https://test.pypi.org/simple/ lingvo-dictionary
 ```
 
 ### Usage
