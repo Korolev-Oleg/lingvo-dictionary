@@ -1,6 +1,6 @@
 import requests
 
-from src.lingvo_dictionary._exceptions import LingvoException
+from lingvo_dictionary._exceptions import LingvoException
 
 
 class LingvoAPI:

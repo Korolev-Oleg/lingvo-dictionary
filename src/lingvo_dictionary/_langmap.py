@@ -1,6 +1,4 @@
 from dataclasses import dataclass
-from enum import Enum
-from pprint import pp
 
 
 @dataclass

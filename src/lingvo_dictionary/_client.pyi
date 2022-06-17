@@ -1,6 +1,6 @@
 from typing import overload
 
-from src.lingvo_dictionary import LangMap
+from lingvo_dictionary import LangMap
 
 
 class LingvoAPI:
@@ -22,7 +22,7 @@ class LingvoAPI:
     def search(self, text: str, srcLang: LangMap, dstLang: LangMap, searchZone: int, startIndex: int,
                page_size: int) -> dict: ...
 
-    def article(self, heading: str, dictionary: str, srcLang: LangMap, dstLang: LangMap) -> str: ...
+    def article(self, heading: str, dict: str, srcLang: LangMap, dstLang: LangMap) -> str: ...
 
     def suggests(self, text: str, srcLang: LangMap, dstLang: LangMap) -> str: ...
 
