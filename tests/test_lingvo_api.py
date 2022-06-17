@@ -85,15 +85,6 @@ class TestLingvoApi(unittest.TestCase):
             dstLang=LangMap.Russian
         )
 
-    def test_wordforms(self):
-        LangMap.English
-        self.client.word_list(
-            prefix='test',
-            srcLang=LangMap.English,
-            dstLang=LangMap.Chinese,
-            pageSize=1,
-        )
-        ...
     #
     # def test_sound(self):
     #     ...
