@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from enum import Enum
+from pprint import pp
 
 
 @dataclass
@@ -307,6 +308,7 @@ class LangMap:
     # UighurCyrillic = 1646
     # UighurLatin = 1647
     Ukrainian = 1058
+
     # Universal = 1653
     # UrduIndia = 2080
     # UrduPakistan = 1056
@@ -326,3 +328,6 @@ class LangMap:
     # Yiddish = 1085
     # Zapotec = 1651
     # Zulu = 1077
+
+    def __dict__(self):
+        return {k: getattr(self, k) for k in self.__dir__() if '__' not in k}

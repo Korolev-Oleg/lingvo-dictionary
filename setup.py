@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-with open('src/lingvo_api/__init__.py', 'r') as f:
+with open('src/lingvo_dictionary/__init__.py', 'r') as f:
     version = re.search(
         r'__version__\s*=\s*[\'"]([^\'"]+)[\'"]',
         f.read(),
