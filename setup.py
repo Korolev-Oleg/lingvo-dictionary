@@ -16,12 +16,20 @@ setup(
     author='korolev-oleg',
     author_email='ok@hustn.cn',
     version=version,
-    url='',
+    url='https://github.com/Korolev-Oleg/lingvo-dictionary',
     license='MIT',
     keywords=['lingvo', 'dictionary', 'dictionaries', 'lingvo-api'],
     description='Python library for work with ABBYY Lingvo Dictionaries API',
     long_description=long_description,
     long_description_content_type="text/markdown",
+    project_urls={
+        "Bug Tracker": "https://github.com/Korolev-Oleg/lingvo-dictionary/issues",
+        "Documentation": "https://developers.lingvolive.com/en-us/Help",
+        "Developer Telegram": "https://t.me/hustncn"
+    },
+    install_requires=[
+        'requests>=2.28'
+    ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
